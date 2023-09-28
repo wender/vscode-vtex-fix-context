@@ -4,6 +4,12 @@ All notable changes to the "vtex-fix-context-json" extension will be documented 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.0.5]
+
+### Added
+
+- Check if it is `context.json` file
+
 ## [0.0.4]
 
 ### Added

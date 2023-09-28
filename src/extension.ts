@@ -2,9 +2,14 @@ import * as vscode from "vscode";
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand(
     "vtex-fix-context-json.fixContext",
-    () => {
+    (uri: vscode.Uri) => {
       const textEditor = vscode.window.activeTextEditor;
-      const startLine = 0;
+      const filePath = uri.fsPath;
+
+      if (filePath.toLocaleLowerCase().indexOf("context.json") === -1) {
+        vscode.window.showErrorMessage("This is not a context.json file");
+        return;
+      }
       const endLine = textEditor?.document?.lineCount;
 
       console.log("endLine =>", endLine);
