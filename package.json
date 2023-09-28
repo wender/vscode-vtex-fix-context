@@ -2,7 +2,7 @@
   "name": "vtex-fix-context-json",
   "displayName": "VTEX fix context.json",
   "description": "Changes all properties to have the key itself as the value for the context.json file",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.82.0"
   },
