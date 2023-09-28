@@ -21,7 +21,7 @@ export function activate(context: vscode.ExtensionContext) {
           new vscode.Range(
             0,
             0,
-            endLine,
+            endLine - 1,
             textEditor.document.lineAt(endLine - 1).text.length - 1
           )
         );
@@ -36,7 +36,7 @@ export function activate(context: vscode.ExtensionContext) {
           const range = new vscode.Range(
             0,
             0,
-            endLine,
+            endLine - 1,
             textEditor.document.lineAt(endLine - 1).text.length - 1
           );
           editBuilder.replace(range, JSON.stringify(contextObj, null, "\t"));
