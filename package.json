@@ -9,6 +9,11 @@
   "categories": [
     "Other"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wender/vscode-vtex-fix-context"
+  },
+  "publisher": "Wender Lima",
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
